@@ -55,9 +55,13 @@ couleur text par défaut: 044258
 
 small : 799px, desktop: 1024px
 
-### Composant Alert
+## Composants
 
-Créer toutes les variations
+Voir les maquettes associées dans src/assets/maquettes
+
+### Alert
+
+Messages d'information. Créez toutes les variations.
 
 gris clair : f8f9f9, gris foncé : e3e6e9
 
@@ -67,11 +71,13 @@ rouge claire: fff5f5, rouge foncé : ff999c
 
 Breakpoint small: l'icone se cache
 
-### Composant Popin
+### Popin
+
+Doit se comporter comme une popin/modal, fixée au scroll de page avec son layer.
 
 bleu clair: 11bad5
 
-### Composant Form Text
+### Form Text
 
 Champ texte de formulaire, créez tous les états.
 
@@ -83,18 +89,18 @@ size supporting text : 12px
 
 Pour l'icone, choisissez celui de votre choix dans les assets
 
-### Composant card-links
+### Card Links
 
-Créez une liste de liens, toute la zone est cliquable, au survole les couleurs des text/background s'échangent.
+Une liste de liens, toute la zone du lien est cliquable, au survole les couleurs des text/background s'échangent. au breakpoint small: Les cartes prennent 100% de la largeur.
 
 Pour l'icone, choisissez celui de votre choix dans les assets
 
 couleur de fond : f0f7fa,
 couleur lien :044258
 
-Breakpoint small: Les cartes passent à 100% de la largeur
+### Tab
 
-### Composant tab
+Liens de navigation
 
 Voir les détails sur la maquette
 
