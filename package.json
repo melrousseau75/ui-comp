@@ -1,0 +1,17 @@
+{
+  "name": "difa-207-ui-comp",
+  "version": "1.0.0",
+  "description": "maquettes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "sass": "^1.69.5",
+    "vite": "^5.0.7"
+  }
+}
