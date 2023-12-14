@@ -1,1 +1,72 @@
 // form-text.scss
+$bleu_50: #11bad5;
+$gris_50 : #adb5bc;
+$rouge_100 : #ff999c;
+.comp{
+  &-form{
+    .form-control{
+      border: 0 none;
+      border-bottom: 1px solid $gris_50;
+      border-radius: 0;
+      font-size: 16px;
+      padding: 0;
+      &:focus{
+        box-shadow: none;
+      }
+      & + label{
+        color: $gris_50;
+        font-size: 12px;
+        padding: 0;
+      }
+    }
+    &__valid{
+      .form-control {
+        border-bottom-color: $bleu_50;
+
+        & + label {
+          color: $bleu_50;
+          & + p {
+            color: $bleu_50;
+            & + i {
+              color: $bleu_50;
+            }
+          }
+        }
+      }
+    }
+    &__error{
+      .form-control {
+        border-bottom-color: $rouge_100;
+
+        & + label {
+          color: $rouge_100;
+          & + p {
+            color: $rouge_100;
+          }
+        }
+      }
+    }
+    &__disabled{
+      .form-control {
+        background: none;
+        border-bottom-color: $gris_50;
+        & + label {
+          color: $gris_50;
+          & + p {
+            color: $gris_50;
+          }
+        }
+      }
+    }
+    &-indication{
+      font-size: 12px;
+      margin: 4px 0 0;
+    }
+    i{
+      color: $gris_50;
+      position: absolute;
+      right: 0;
+      top: 40%;
+    }
+  }
+}

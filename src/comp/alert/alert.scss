@@ -1,1 +1,42 @@
-// alert.scss
+$gris_50 : #f8f9f9;
+$gris_100 : #e3e6e9;
+$orange_50 : #fff9f5;
+$orange_100 : #ffb885;
+$rouge_50 : #fff5f5;
+$rouge_100 : #ff999c;
+.comp{
+  &-alert{
+    border-radius: 10px;
+    padding: 24px;
+    &-content{
+      margin-left: 8px;;
+      h3{
+        font-size: 16px;
+      }
+      p{
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+    &.alert-primary{
+      background-color: $gris_50;
+      border-color: $gris_100;
+    }
+    &.alert-warnig{
+      background-color: $orange_50;
+      color: $orange_100;
+      border: 1px solid $orange_100;
+    }
+    &.alert-danger{
+      background-color: $rouge_50;
+      color: $rouge_100;
+      border: 1px solid $rouge_100;
+    }
+    i{
+      font-size: 32px;
+      @media only screen and (max-width: 799px) {
+        display: none;
+      }
+    }
+  }
+}

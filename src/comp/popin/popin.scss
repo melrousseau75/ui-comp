@@ -1,1 +1,55 @@
 // popin.scss
+$blue: #11bad5;
+.comp{
+  &-modal{
+    @media (min-width: 576px){
+      .modal-dialog {
+        max-width: 701px;
+      }
+    }
+    .modal-content{
+      border-radius: 20px;
+      padding: 50px;
+    }
+    .modal-footer{
+      border: 0 none;
+      flex-direction: column;
+      justify-content: center;
+    }
+    i{
+      color: $blue;
+    }
+    h3{
+      margin: 30px 10px;
+    }
+    p{
+      font-size: 16px;
+      margin: 0;
+    }
+    .btn{
+    }
+    &-btn-submit{
+      font-size: 14px;
+      border-radius: 20px;
+      background-color: #11bad5;
+      color: #FFFFFF;
+      padding: 10px 30px;
+      font-weight: bold;
+      border-color: $blue;
+      &:hover{
+        background-color: #11bad5;
+        border-color: $blue;
+      }
+    }
+    &-btn-close{
+      border: 0 none;
+      background: none;
+      color: #000;
+      text-decoration: underline;
+      &:hover{
+        background: none;
+        color: #000;
+      }
+    }
+  }
+}
