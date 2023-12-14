@@ -91,7 +91,7 @@ text label : 12px,
 text value : 16px,
 text supporting text : 12px
 
-Pour l'icone, choisissez celui de votre choix dans les assets
+Pour l'icone, choisissez celui de votre choix dans les assets.
 
 ### Card Links
 
