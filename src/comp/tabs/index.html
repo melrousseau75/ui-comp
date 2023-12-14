@@ -6,7 +6,33 @@
     <title>Composant Tabs</title>
   </head>
   <body>
-    Tabs...
+    <div class="tabs">
+      <div class="tab active" onclick="changeTab(1)">label</div>
+      <div class="tab" onclick="changeTab(2)">label</div>
+      <div class="tab" onclick="changeTab(3)">label</div>
+      <div class="tab" onclick="changeTab(4)">label</div>
+      <div class="tab" onclick="changeTab(5)">label</div>
+      <div class="tab" onclick="changeTab(6)">label</div>
+  </div>
+
+  <div class="content">
+      <div class="tab-content active">Content for Tab 1</div>
+      <div class="tab-content">Content for Tab 2</div>
+      <div class="tab-content">Content for Tab 3</div>
+      <div class="tab-content">Content for Tab 4</div>
+      <div class="tab-content">Content for Tab 5</div>
+      <div class="tab-content">Content for Tab 6</div>
+  </div>
+
+  <script>
+    function changeTab(tabNumber) {
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+    document.querySelector(`.tab:nth-child(${tabNumber})`).classList.add('active');
+    document.querySelector(`.tab-content:nth-child(${tabNumber})`).classList.add('active');
+}
+  </script>
 
     <!-- Ne pas supprimer la balise scrip-->
     <script type="module" src="./index.js"></script>

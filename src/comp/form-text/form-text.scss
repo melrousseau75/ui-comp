@@ -1,1 +1,36 @@
-// form-text.scss
+.label {
+    color: #11bad5;
+    font-size: 12px;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #adb5bc;
+    padding-left: 0;
+}
+
+.input-field {
+    flex: 1;
+    outline: none;
+    border: none;
+}
+
+.input-container:hover {
+    border-bottom: 1px solid #11bad5;
+}
+
+.supporting-text {
+    font-size: 10px;
+    color: #adb5bc
+}
+
+.valid {
+    border-color: #0a0; 
+}
+
+.error {
+    border-color: #f00; 
+}

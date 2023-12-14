@@ -6,10 +6,21 @@
     <title>Composant FormText</title>
   </head>
   <body>
-    Form text ...
+    <div class="input-field">
+      <label for="input" class="label">Label</label>
+      <div class="input-container">
+        <input id="input" placeholder="Value" type="text" class="input-field" oninput="validateInput(this.value)" >
+        <img src="../../assets/icon-32-px-info-bulb.svg" />
+      </div>
+      <p id="supporting-text" class="supporting-text">Supporting-text</p>
+    </div>
+
+    
 
     <!-- Ne pas supprimer la balise scrip-->
     <script type="module" src="./index.js"></script>
     <!-- Ne pas supprimer la balise scrip-->
   </body>
 </html>
+
+

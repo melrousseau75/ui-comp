@@ -1,1 +1,10 @@
-// style.scss
+@font-face {
+    font-family: "hello-type";
+    src: url("./assets/hello-type-medium.woff");
+}
+
+* {
+    box-sizing: border-box;
+    color: #044258;
+    font-family: "hello-type", Arial, Helvetica, sans-serif;
+}

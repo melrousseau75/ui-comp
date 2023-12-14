@@ -6,7 +6,26 @@
     <title>Composant test POPIN</title>
   </head>
   <body>
-    popin
+    <button onclick="openPopup()">Open Popup</button>
+    <div id="overlay" class="overlay">
+      <div class="popup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img src="../../assets/icon-32-px-info-bulb.svg" >
+        <h4>Votre pièce d'identité doit être mise à jour</h4>
+        <p>Actualisez votre pièce d'identité: c'est simple, rapide et sécurisé</p>
+        <button type="button">Transmettre</button>
+        
+      </div>
+    </div>
+
+    <script>
+      function openPopup() {
+          document.getElementById('overlay').style.display = 'flex';
+      }
+      function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+      }
+    </script>
 
     <!-- Ne pas supprimer la balise scrip-->
     <script type="module" src="./index.js"></script>
