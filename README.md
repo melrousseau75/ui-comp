@@ -28,7 +28,7 @@ Vous devez avoir Git, Node 20 et NPM installés pour exécuter les commandes.
 
 Vous devez développer les composants de votre choix dans l'ordre que vous désirez parmi les 5 proposés.
 
-Il n'y a pas de template de page définit, les composants doivent s'afficher correctement hors contexte, dans tout types de navigateurs.
+Il n'y a pas de template de page défini, les composants doivent s'afficher correctement hors contexte, dans tout types de navigateurs.
 
 ## Maquettes et ressources
 
@@ -69,6 +69,8 @@ orange clair: fff9f5, orange foncé : ffb885
 
 rouge claire: fff5f5, rouge foncé : ff999c
 
+titre: 16px, text: 14px
+
 Breakpoint small: l'icone se cache
 
 ### Popin
@@ -77,15 +79,17 @@ Doit se comporter comme une popin/modal, fixée au scroll de page avec son layer
 
 bleu clair: 11bad5
 
+titre: 18px, text: 14px, cta 14px
+
 ### Form Text
 
 Champ texte de formulaire, créez tous les états.
 
 bleu clair: 11bad5, gris clair : adb5bc
 
-size label : 12px,
-size value : 16px,
-size supporting text : 12px
+text label : 12px,
+text value : 16px,
+text supporting text : 12px
 
 Pour l'icone, choisissez celui de votre choix dans les assets
 
@@ -98,9 +102,12 @@ Pour l'icone, choisissez celui de votre choix dans les assets
 couleur de fond : f0f7fa,
 couleur lien :044258
 
+text: 16px
+
 ### Tab
 
 Liens de navigation
+text: 16px
 
 Voir les détails sur la maquette
 
