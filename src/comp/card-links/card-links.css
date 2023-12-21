@@ -1,0 +1,56 @@
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #044258;
+    margin-bottom: 3rem;
+}
+
+.cards {
+    margin: 15px;
+    padding: 10px;
+    color: #044258;
+    background-color: #f0f7fa;
+    border-radius: 10px;
+}
+
+.cards:hover {
+    color: #f0f7fa;
+    background-color: #044258;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 799px) {
+
+    .block-cards {
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .cards {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .block-cards {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 900px;
+    }
+
+    .cards {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
